@@ -1,0 +1,216 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+
+	<script type="text/javascript">
+	var a = 0;
+	$(document).ready(run());				
+	function run(){
+		setInterval('byt()',5000);
+	};
+	function byt(){
+		a++;
+		switch(a){
+			case 1:
+				$("#foto1").fadeOut(500);
+				setTimeout('$("#foto2").fadeIn(500)',500);
+				break;
+			case 2:
+				$("#foto2").fadeOut(500);
+				setTimeout('$("#foto3").fadeIn(500)',500);
+				break;
+			case 3:
+				$("#foto3").fadeOut(500);
+				setTimeout('$("#foto1").fadeIn(500)',500);
+				break;							
+		}
+		if (a>=3) {
+			a=0;
+		}
+	};
+	</script>
+</head>
+<body style="background-image: none;">
+	<div class="content">	
+		<div class="top">		
+		</div>
+		<header>
+			<ul id="headerlist">
+				<li>
+					<a href="karlskronabowling.html">BOWLING</a>
+				</li>
+				<li>
+					<a href="#karlskronabiljard.html">BILJARD</a>
+				</li>
+				<li>
+					<a href="#lasergame.html">LASERGAME</a>
+				</li>
+				<li>
+					<a href="#lekland.html">LEKLAND</a>
+				</li>
+				<li>
+					<a href="#spelhall.html">SPELHALL</a>
+				</li>
+				<li>
+					<a href="#hoppborg.html">HOPPBORG/PARTYTÄLT</a>
+				</li>
+				<li>
+					<a href="#konferens.html">KONFERENS</a>
+				</li>
+				<li>
+					<a href="#5kamp.html">5-KAMP</a>
+				</li>
+			</ul>
+		</header>
+		<div class="main">
+			<aside>
+				<ul id="leftlist">
+					<li id="1">
+						<a href="karlskronabowling.html">Hem</a>
+					</li>
+					<li id="2">
+						<a href="kontaktaoss.html">Kontakta oss</a>
+					</li>
+					<li id="3">
+						<a href="priser.html">Priser/Öppetider</a>
+					</li>
+					<li id="4">
+						<a href="skolor.html">Skolor/Företag</a>
+					</li>
+					<li id="5">
+						<a href="klubb.html">Träning/Klubbar</a>
+					</li>
+					<li id="6">
+						<a href="cyberzone.html">CyberZone</a>
+					</li>
+				</ul>
+				<script type="text/javascript">
+				$(document).ready(function(){
+					$("#1 a").mouseover(function(){
+						$("#1 a").animate({fontSize:"18px"},200);
+						$("#1").css({
+							"background-image": "url('kegel.png')",
+							"background-position": "left",
+							"background-repeat": "no-repeat",
+							"background-size": "8%"});
+					});
+					$("#2 a").mouseover(function(){
+						$("#2 a").animate({fontSize:"18px"},200);
+						$("#2").css({
+							"background-image": "url('kegel.png')",
+							"background-position": "left",
+							"background-repeat": "no-repeat",
+							"background-size": "8%"});
+					});
+					$("#3 a").mouseover(function(){
+						$("#3 a").animate({fontSize:"18px"},200);
+						$("#3").css({
+							"background-image": "url('kegel.png')",
+							"background-position": "left",
+							"background-repeat": "no-repeat",
+							"background-size": "8%"});
+					});
+					$("#4 a").mouseover(function(){
+						$("#4 a").animate({fontSize:"18px"},200);
+						$("#4").css({
+							"background-image": "url('kegel.png')",
+							"background-position": "left",
+							"background-repeat": "no-repeat",
+							"background-size": "8%"});
+					});
+					$("#5 a").mouseover(function(){
+						$("#5 a").animate({fontSize:"18px"},200);
+						$("#5").css({
+							"background-image": "url('kegel.png')",
+							"background-position": "left",
+							"background-repeat": "no-repeat",
+							"background-size": "8%"});
+					});
+					$("#6 a").mouseover(function(){
+						$("#6 a").animate({fontSize:"18px"},200);
+						$("#6").css({
+							"background-image": "url('kegel.png')",
+							"background-position": "left",
+							"background-repeat": "no-repeat",
+							"background-size": "8%"});
+					});
+					$("#1 a,#2 a,#3 a,#4 a,#5 a,#6 a").mouseout(function(){
+						$("#1 a,#2 a,#3 a,#4 a,#5 a,#6 a").animate({fontSize:"16px"},200);
+						$("#1,#2,#3,#4,#5,#6,#7").css({
+							"background-image": "none",
+							"background-position": "left",
+							"background-repeat": "no-repeat",
+							"background-size": "8%"});
+					});
+				});
+				</script>
+				<div id="leftasidetext">
+					<p>
+						Öppettider:<br>
+						Måndag: STÄNGT<br>
+						Tisdag: 17:00-21:00<br>
+						Onsdag: 17:00-21:00<br>
+						Torsdag: 17:00-21:00<br>
+						Fredag: 17:00-21:00<br>
+						Lördag: 12:00-21:00<br>
+						Söndag: 12:00-17:00<br>
+						<br>
+						Övr. tid ring för bokning.<br>
+
+						OBS: Sista timmen<br>
+						stänger vi om inget<br>
+						spel har påbörjats.<br>
+						<br>
+						<a href="https://www.hitta.se/kartan!~56.16213,15.56473,14z/tr!i=KZPFLkXm/search!q=ut%C3%B6v%C3%A4gen%201c%20karlskrona!b=56.15573:15.53177,56.16854:15.59769!t=combined!ai=1005213527!aic=56.16213:15.56473" target="_blank"><i>Utövägen 1C på Saltö</i></a><br>
+						<br>
+						Tel. (öppetider):<br>
+						0455-333311<br>
+						Tel. (alla tider):<br>
+						0768-868457<br>
+					</p>
+				</div>
+			</aside>
+			<article>
+				<div class="text">
+					<br>
+					<h2>
+						Kontakta oss
+					</h2>
+					<pre>						
+Telefon under öppetider: 0455-333311.
+Telefon alla tider: 0768-868457
+
+Postadress:
+Cyberzone
+Utövägen 1C
+371 37 Karlskrona
+
+För inzoomad karta klicka på bilden: 
+<a href="https://www.hitta.se/kartan!~56.16213,15.56473,14z/tr!i=KZPFLkXm/search!q=ut%C3%B6v%C3%A4gen%201c%20karlskrona!b=56.15573:15.53177,56.16854:15.59769!t=combined!ai=1005213527!aic=56.16213:15.56473" target="_blank" id="karta" target="_blank"><img src="img/karta.jpg"></a>
+					</pre>
+					<h3>
+					INFORMATION
+					</h3>
+					<p>
+						Ni är välkomna att boka via vår telefon. Skulle vi inte svara lämna gärna ett meddelande
+						så ringer vi upp så snart vi kan (mobiltelefonen).<br>
+						Tänk på att vid korrespondens via mail är ni inte bokade förrän bekräftelse är skickad av oss
+						(kan tyvärr ta några dagar om vi har mycket att göra).<br>
+					</pre>
+				</div>
+			</article>
+		</div>
+	</div>
+	<footer>
+		<a href="https://www.instagram.com/explore/locations/264568899/cyberzone/" target="_blank"><img src="img/instagram.png" title="Instagram"></a>
+		<p>
+			Bokning: 0768 - 86 84 57. Ni hittar oss på <a href="https://www.hitta.se/kartan!~56.16213,15.56473,14z/tr!i=KZPFLkXm/search!q=ut%C3%B6v%C3%A4gen%201c%20karlskrona!b=56.15573:15.53177,56.16854:15.59769!t=combined!ai=1005213527!aic=56.16213:15.56473" target="_blank"><i>Utövägen 1C på Saltö</i></a>.
+		</p>		
+	</footer>
+</body>
+</html>

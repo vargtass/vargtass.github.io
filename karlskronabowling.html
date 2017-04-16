@@ -1,0 +1,413 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+	<script type="text/javascript">
+		var a = 0;
+		$(document).ready(run());				
+		function run(){
+			setInterval('byt()',5000);
+		}
+		function byt(){
+			a++;
+			switch(a){
+				case 1:
+					$("#foto1").fadeOut(500);
+					setTimeout('$("#foto2").fadeIn(500)',500);
+					break;
+				case 2:
+					$("#foto2").fadeOut(500);
+					setTimeout('$("#foto3").fadeIn(500)',500);
+					break;
+				case 3:
+					$("#foto3").fadeOut(500);
+					setTimeout('$("#foto1").fadeIn(500)',500);
+					break;							
+			}
+			if (a>=3) {
+				a=0;
+			}
+		};
+
+		var b = 0;
+		$(document).ready(run1());				
+		function run1(){
+			setInterval('byt1()',5000);
+		}
+		function byt1(){
+			b++;
+			switch(b){
+				case 1:
+					$("#foto6").fadeOut(500);
+					setTimeout('$("#foto7").fadeIn(500)',500);
+					break;
+				case 2:
+					$("#foto7").fadeOut(500);
+					setTimeout('$("#foto8").fadeIn(500)',500);
+					break;
+				case 3:
+					$("#foto8").fadeOut(500);
+					setTimeout('$("#foto9").fadeIn(500)',500);
+					break;
+				case 4:
+					$("#foto9").fadeOut(500);
+					setTimeout('$("#foto10").fadeIn(500)',500);
+					break;
+				case 5:
+					$("#foto10").fadeOut(500);
+					setTimeout('$("#foto6").fadeIn(500)',500);
+					break;						
+			}
+			if (b>=5) {
+				b=0;
+			}
+		};
+	</script>	
+</head>
+<body>
+	<div class="content">
+		<a name="upp"></a>	
+		<div class="top">		
+		</div>
+		<header>
+			<ul id="headerlist">
+				<li>
+					<a href="karlskronabowling.html">BOWLING</a>
+				</li>
+				<li>
+					<a href="#karlskronabiljard.html">BILJARD</a>
+				</li>
+				<li>
+					<a href="#lasergame.html">LASERGAME</a>
+				</li>
+				<li>
+					<a href="#lekland.html">LEKLAND</a>
+				</li>
+				<li>
+					<a href="#spelhall.html">SPELHALL</a>
+				</li>
+				<li>
+					<a href="#hoppborg.html">HOPPBORG/PARTYTÄLT</a>
+				</li>
+				<li>
+					<a href="#konferens.html">KONFERENS</a>
+				</li>
+				<li>
+					<a href="#5kamp.html">5-KAMP</a>
+				</li>
+			</ul>
+		</header>
+		<div class="gradient">
+		<div class="main">
+			<aside>
+				<ul id="leftlist">
+					<li id="1">
+						<a href="karlskronabowling.html">Hem</a>
+					</li>
+					<li id="2">
+						<a href="kontaktaoss.html">Kontakta oss</a>
+					</li>
+					<li id="3">
+						<a href="priser.html">Priser/Öppetider</a>
+					</li>
+					<li id="4">
+						<a href="skolor.html">Skolor/Företag</a>
+					</li>
+					<li id="5">
+						<a href="klubb.html">Träning/Klubbar</a>
+					</li>
+					<li id="6">
+						<a href="cyberzone.html">CyberZone</a>
+					</li>
+				</ul>
+				<script type="text/javascript">
+				$(document).ready(function(){
+					$("#1 a").mouseover(function(){
+						$("#1 a").animate({fontSize:"18px"},200);
+						$("#1").css({
+							"background-image": "url('kegel.png')",
+							"background-position": "left",
+							"background-repeat": "no-repeat",
+							"background-size": "8%"});
+					});
+					$("#2 a").mouseover(function(){
+						$("#2 a").animate({fontSize:"18px"},200);
+						$("#2").css({
+							"background-image": "url('kegel.png')",
+							"background-position": "left",
+							"background-repeat": "no-repeat",
+							"background-size": "8%"});
+					});
+					$("#3 a").mouseover(function(){
+						$("#3 a").animate({fontSize:"18px"},200);
+						$("#3").css({
+							"background-image": "url('kegel.png')",
+							"background-position": "left",
+							"background-repeat": "no-repeat",
+							"background-size": "8%"});
+					});
+					$("#4 a").mouseover(function(){
+						$("#4 a").animate({fontSize:"18px"},200);
+						$("#4").css({
+							"background-image": "url('kegel.png')",
+							"background-position": "left",
+							"background-repeat": "no-repeat",
+							"background-size": "8%"});
+					});
+					$("#5 a").mouseover(function(){
+						$("#5 a").animate({fontSize:"18px"},200);
+						$("#5").css({
+							"background-image": "url('kegel.png')",
+							"background-position": "left",
+							"background-repeat": "no-repeat",
+							"background-size": "8%"});
+					});
+					$("#6 a").mouseover(function(){
+						$("#6 a").animate({fontSize:"18px"},200);
+						$("#6").css({
+							"background-image": "url('kegel.png')",
+							"background-position": "left",
+							"background-repeat": "no-repeat",
+							"background-size": "8%"});
+					});
+					$("#1 a,#2 a,#3 a,#4 a,#5 a,#6 a").mouseout(function(){
+						$("#1 a,#2 a,#3 a,#4 a,#5 a,#6 a").animate({fontSize:"16px"},200);
+						$("#1,#2,#3,#4,#5,#6,#7").css({
+							"background-image": "none",
+							"background-position": "left",
+							"background-repeat": "no-repeat",
+							"background-size": "8%"});
+					});
+				});
+				</script>
+				<div id="leftasidetext">
+					<p>
+						Öppettider:<br>
+						Måndag: STÄNGT<br>
+						Tisdag: 17:00-21:00<br>
+						Onsdag: 17:00-21:00<br>
+						Torsdag: 17:00-21:00<br>
+						Fredag: 17:00-21:00<br>
+						Lördag: 12:00-21:00<br>
+						Söndag: 12:00-17:00<br>
+						<br>
+						Övr. tid ring för bokning.<br>
+
+						OBS: Sista timmen<br>
+						stänger vi om inget<br>
+						spel har påbörjats.<br>
+						<br>
+						<a href="https://www.hitta.se/kartan!~56.16213,15.56473,14z/tr!i=KZPFLkXm/search!q=ut%C3%B6v%C3%A4gen%201c%20karlskrona!b=56.15573:15.53177,56.16854:15.59769!t=combined!ai=1005213527!aic=56.16213:15.56473" target="_blank"><i>Utövägen 1C på Saltö</i></a><br>
+						<br>
+						Tel. (öppetider):<br>
+						0455-333311<br>
+						Tel. (alla tider):<br>
+						0768-868457<br>
+					</p>
+				</div>
+			</aside>
+			<article>
+				<div class="slider">		
+					<div id="foto1">
+						<img  src="img/foto10.jpg">
+					</div>
+					<div id="foto2">
+						<img src="img/foto2.jpg">
+					</div>
+					<div id="foto3">
+						<img src="img/foto3.jpg">
+					</div>	
+				</div>
+				<div class="text" id="välkomna">
+					<h2>Välkommen att spela Bowling i Karlskrona.</h2>
+					<br>
+					<p>
+						Vi har en modern 10 banors bowlinganläggning i rymliga lokaler fint beläget på Saltö udde. Önskar ni spela bowling i större sällskap har vi bra utrymmen där ni kan äta, fika, hålla möten. Vi har poängsystem med roliga ljud och bildefekter. För den som önskar är våra bowlingbanor utrustade med bumpers som hindrar kloten från att trilla ner i rännorna, perfekt för barn. Fredagar och lördagar har vi discobowling samt vid önskemål tex vid kalas. Skor och klot går bra att låna (ingår i banhyran).
+					</p>
+					<br>
+					<h2>
+						NYHET
+					</h2>
+					<br>
+					<p>
+						Ungdomsträning onsdagar 17:00-18:00. Vi startar nu upp ungdomsträning from den 1/3 -14. Alla är välkomna att spela då vi försöker få ihop en nybörjargrupp. Det går bra att bara komma in och prova eller ring 0455-333311. Skor och klot får ni låna. Pris 20:-/gång.
+					</p>
+				</div>
+				<div class="text" id="restaurang">
+					<br>
+					<h2>Restaurang</h2>
+					<p>
+					<br>
+						Är ni sugna på en fika eller en bit mat har vi en trevlig restaurang med utsikt över havet.
+						Är ni ett större sällskap och behöver någonstans att samlas är denna lokal perfekt.
+						Här är också bra utrymmen för barnen då vi har bowlingkalas.<br>
+						<br>
+						<img src="img/foto13.jpg">
+						<br>
+						Önskar ni boka restaurangen för ett möte i anslutning till bowling är ni välkomna att ringa.
+					</p>
+				</div>								
+			</article>
+			<div class="divrighr">
+				<ul id="rightlist">
+					<li>
+						<a href="#upp">Upp</a>
+					</li>
+					<li>
+						<a href="#restaurang">Restaurang</a>
+					</li>
+					<li>
+						<a href="#bowlingbanor">Bowlingbanor</a>
+					</li>
+					<li>
+						<a href="#discobowling">Discobowling</a>
+					</li>
+					<li>
+						<a href="#utrustning">Skor/Klot</a>
+					</li>					
+					<li>
+						<a href="#klasrum">Klasrum</a>
+					</li>
+					<li>
+						<a href="#uteplats">Uteplats</a>
+					</li>
+					<li>
+						<a href="#annat">Övrigt</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		</div>
+		<div class="main2">
+			<div id="main2div">
+				<div class="text" id="bowlingbanor">
+					<p>
+						<h2>Bowlingbanor</h2>
+						<br>
+						Välkommen till bowlinghallen för en titt på våra banor.<br>
+						Önskar ni en titt i maskinrummet, säg till personalen.<br>
+						<br>
+						Vi har 10 st besiktade laminatbanor med AMF maskiner.<br>
+						<br>
+						Vårt Scoringsystem är Proscoria.<br><br>
+						Önskas ni era poäng utskrivna efteråt så säg till i receptionen.<br>
+					</p>
+				</div>
+				<div class="text" id="discobowling">				
+					<p>
+						<br>
+						<h2>Discobowling</h2>
+						<br>
+						På fredag- och lördagkvällar är det discobowling från kl:18:00-22:00.<br>
+						<br>
+						Vid barnkalas brukar vi också ha disco vilket barnen älskar.<br>
+						Vi släcker då ner belysningen och tänder UV-ljuset.<br>
+						Vi har 6st discolampor, pulserande diodbelysning i banor och på väggar,<br>
+						rökmaskiner samt en häftig ljudanläggning där ni gärna kan önska låtar.<br>
+						<br>
+						Discobowling på fredag- och lördagkvällar
+					</p>
+				</div>
+			</div>
+			<div id="main2slider">
+				<div class="slider">		
+					<div id="foto6">
+						<img  src="img/foto6.jpg">
+					</div>
+					<div id="foto7">
+						<img src="img/foto7.jpg">
+					</div>
+					<div id="foto8">
+						<img src="img/foto8.jpg">
+					</div>
+					<div id="foto9">
+						<img src="img/foto9.jpg">
+					</div>
+					<div id="foto10">
+						<img src="img/foto10.jpg">
+					</div>
+				</div>
+			</div>
+		</div> 
+		<div class="main3">
+			<div id="main3div">
+				<a name="utrustning"></a>
+				<div id="skoroklot">
+					<span class="text" id="skor">					
+						<p>
+							<h2>Skor</h2>
+							<br>
+							Bowlingskor ingår i banhyran. Storlekar från 32 till 48.<br>
+							<br>
+							<img src="img/foto4.jpg">
+						</p>
+					</span>
+					<span class="text" id="klot"> 
+						<p>
+							<h2>Klot</h2>
+							<br>
+							Vi har klot från 5 pund till 16 som också ingår i banhyran.<br>
+							<br>
+							<img src="img/foto5.jpg">
+							<br>
+						</p>
+					</span>
+				</div>
+				<div class="text" id="klasrum">					
+					<p>
+						<br>
+						<h2>Kalasrum</h2>
+						<br>
+						Vi dukar upp i restaurangen samt dekorerar med balonger och girlanger. Vi har rymliga lokaler vilket gör att det går bra att ha två kalas samtidigt. Det går också bra att ta med egen dekoration och fika om ni önskar.<br>
+						<br>
+						Det finns bra utrymmen i restaurangen för att fika/äta på samt att röra sig.<br>
+					</p>
+					<br>
+					<a name="uteplats"></a>
+					<br>
+					<h2>Uteplats/veranda</h2>
+					<br>
+					<p>Välkomna på en upplevelse nära havet.</p>
+				</div>
+				<div class="text" id="uteplatsdiv">					
+					<span>
+						<p>Underbar utsikt dagtid....</p>		
+						<img src="img/foto11.jpg">
+					</span>
+					<span>
+						<p>som kvällstid.</p>					
+						<img src="img/foto12.jpg">
+					</span>
+				</div>
+				<a name="annat"></a>
+				<div class="text">
+					<h2>Översiktskarta</h2>
+				</div>
+				<div class="text" id="overkartan">
+					<span>
+					<br>
+						<p>						
+							Cyberzone är på ca 2500kvm.<br>
+							Bowlinghallen tar ca 800kvm.
+						</p>
+					</span>
+					<span>
+						<br>
+						<img src="img/overkarta.jpg">
+					</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<a href="https://www.instagram.com/explore/locations/264568899/cyberzone/" target="_blank"><img src="img/instagram.png" title="Instagram"></a>
+		<p>
+			Bokning: 0768 - 86 84 57. Ni hittar oss på <a href="https://www.hitta.se/kartan!~56.16213,15.56473,14z/tr!i=KZPFLkXm/search!q=ut%C3%B6v%C3%A4gen%201c%20karlskrona!b=56.15573:15.53177,56.16854:15.59769!t=combined!ai=1005213527!aic=56.16213:15.56473" target="_blank"><i>Utövägen 1C på Saltö</i></a>.
+		</p>		
+	</footer>
+</body>
+</html>
