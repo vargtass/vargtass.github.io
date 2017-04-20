@@ -17,6 +17,11 @@ body {
   background-attachment: fixed;
 }
 
+img {
+  max-width: 100%;
+  max-width: 100%;
+}
+
 /* CONTENT ------------------------------------------------------------------------*/
 
 .content {
@@ -52,22 +57,26 @@ a i:hover {
 /* HEADER ---------------------------------------------------------------------*/
 
 header {
+  display: flex;
+  flex-wrap: wrap;
   font-family: Impact;
+  justify-content: center;
   width: 100%;
-  height: 80px;
+  max-height: 160px;
   background-color: #e44f2c;
-  text-align: center;
+  overflow: hidden;
 }
 
 #headerlist {
   font-size: 0;
-  overflow: hidden;
+
 }
 
 #headerlist li {
   display: inline-block;
   list-style: none;
   height: 80px;
+    
 }
 
 #headerlist li a {
@@ -166,19 +175,101 @@ article {
 /* SLIDER --------------------------------------------------------------------*/
 
 .slider {
-  height: 400px;
+  max-height: 500px;
+  width: 80%;
+  margin: auto;
+  box-sizing: border-box;
+  margin-bottom: 30px;
+}
+
+.slideshow {
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+  margin: 0 auto;
   display: flex;
-  text-align: center;
+  justify-content: center;
   align-items: center;
 }
 
-#foto2, #foto3{
-  display: none;
+.slideshow img {
+  max-height: 350px;
 }
 
-#foto1, #foto2, #foto3{
-  max-height: 400px;
-  width: 100%;
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 5px 5px 0;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+  border-radius: 5px 0 0 5px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0, 0.8);
+}
+
+.nummertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.fototext {
+  color: #f2f2f2;
+  font-size: 20px;
+  position: absolute;
+  margin-left: -12px;
+  bottom: 20px;
+  left: 50%;
+}
+
+.dot1, .dot2 {
+  cursor: pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+ 
+.active, .dot1:hover, .dot2:hover {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name:fade;
+  -webkit-animation-duration:1.5s;
+  animation-name:fade;
+  animation-duration:1.5s;
+}
+
+@-webkit-keyframes fade {
+  from{opacity: .4}
+  to{opacity: 1}
+}
+
+@keyframes fade {
+  from{opacity: .4}
+  to{opacity: 1}
 }
 
 .text {
@@ -190,36 +281,33 @@ article {
   color: #FFF;
 }
 
-/* RIGHT ASIDE --------------------------------------------------------------------*/
 
-.divrighr{
-  position: fixed;
-  background-color: #1D467E;
-  right: 0;
-  top: 25%;
-  border-radius: 20px 0 0 20px;
-  opacity: 0.7;
-  filter: alpha(opacity=70);
+/* SCROLLER --------------------------------------------------------------------*/
+
+.scrolla {
+  width: 80%;
+  margin: auto;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-#rightlist {
-  list-style: none;
-  margin-right: 20px;
+.scrollalist {
+    margin-bottom: 10px;
+}
+
+.scrollalist a {
+  font-family: "Comic Sans MS";
+  color: #FFF;
+  font-size: 20px;
   padding: 10px;
 }
 
-#rightlist li {
-  height: 40px; 
-  margin-left: 20px;
-  line-height: 40px;
-}
-
-#rightlist li a {
-  color: #FFF;
-}
-
-#rightlist li a:hover {
+.scrollalist a:hover {
   color: #EE9E2C;
+  text-decoration: underline;
 }
 
 /* MAIN 2 ---------------------------------------------------------------------*/
@@ -247,6 +335,9 @@ article {
 #main2slider {
   height: 400px;
   width: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #foto7, #foto8, #foto9, #foto10 {
@@ -337,10 +428,6 @@ footer img {
   justify-content: space-around;
 }
 
-table {
-
-}
-
 tr {
   height: 40px;
 }
@@ -358,5 +445,3 @@ tr {
   background-color: #331313;
 
 }
-
-

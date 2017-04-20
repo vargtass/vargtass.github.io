@@ -2,71 +2,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<title></title>
+	<meta http-equiv="Content Type" content="type/html" charset="utf-8">
+	<title>Karlskrona Bowling</title>
+	<meta name="keywords" content="Karlskrona, bowling, cyeberzone">
+	<meta name="description" content="Vällkomen till att spela bowling i Karlskrona.">
+	<link rel="shortcut icon" type="image/x-icon" href="img/icon.ico">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
-	<script type="text/javascript">
-		var a = 0;
-		$(document).ready(run());				
-		function run(){
-			setInterval('byt()',5000);
-		}
-		function byt(){
-			a++;
-			switch(a){
-				case 1:
-					$("#foto1").fadeOut(500);
-					setTimeout('$("#foto2").fadeIn(500)',500);
-					break;
-				case 2:
-					$("#foto2").fadeOut(500);
-					setTimeout('$("#foto3").fadeIn(500)',500);
-					break;
-				case 3:
-					$("#foto3").fadeOut(500);
-					setTimeout('$("#foto1").fadeIn(500)',500);
-					break;							
-			}
-			if (a>=3) {
-				a=0;
-			}
-		};
-
-		var b = 0;
-		$(document).ready(run1());				
-		function run1(){
-			setInterval('byt1()',5000);
-		}
-		function byt1(){
-			b++;
-			switch(b){
-				case 1:
-					$("#foto6").fadeOut(500);
-					setTimeout('$("#foto7").fadeIn(500)',500);
-					break;
-				case 2:
-					$("#foto7").fadeOut(500);
-					setTimeout('$("#foto8").fadeIn(500)',500);
-					break;
-				case 3:
-					$("#foto8").fadeOut(500);
-					setTimeout('$("#foto9").fadeIn(500)',500);
-					break;
-				case 4:
-					$("#foto9").fadeOut(500);
-					setTimeout('$("#foto10").fadeIn(500)',500);
-					break;
-				case 5:
-					$("#foto10").fadeOut(500);
-					setTimeout('$("#foto6").fadeIn(500)',500);
-					break;						
-			}
-			if (b>=5) {
-				b=0;
-			}
-		};
-	</script>	
 </head>
 <body>
 	<div class="content">
@@ -76,7 +18,7 @@
 		<header>
 			<ul id="headerlist">
 				<li>
-					<a href="karlskronabowling.html">BOWLING</a>
+					<a href="index.html">BOWLING</a>
 				</li>
 				<li>
 					<a href="#karlskronabiljard.html">BILJARD</a>
@@ -106,7 +48,7 @@
 			<aside>
 				<ul id="leftlist">
 					<li id="1">
-						<a href="karlskronabowling.html">Hem</a>
+						<a href="index.html">Hem</a>
 					</li>
 					<li id="2">
 						<a href="kontaktaoss.html">Kontakta oss</a>
@@ -129,7 +71,7 @@
 					$("#1 a").mouseover(function(){
 						$("#1 a").animate({fontSize:"18px"},200);
 						$("#1").css({
-							"background-image": "url('kegel.png')",
+							"background-image": "url('img/kegel.png')",
 							"background-position": "left",
 							"background-repeat": "no-repeat",
 							"background-size": "8%"});
@@ -137,15 +79,15 @@
 					$("#2 a").mouseover(function(){
 						$("#2 a").animate({fontSize:"18px"},200);
 						$("#2").css({
-							"background-image": "url('kegel.png')",
+							"background-image": "url('img/kegel.png')",
 							"background-position": "left",
 							"background-repeat": "no-repeat",
 							"background-size": "8%"});
-					});
+						});
 					$("#3 a").mouseover(function(){
 						$("#3 a").animate({fontSize:"18px"},200);
 						$("#3").css({
-							"background-image": "url('kegel.png')",
+							"background-image": "url('img/kegel.png')",
 							"background-position": "left",
 							"background-repeat": "no-repeat",
 							"background-size": "8%"});
@@ -153,7 +95,7 @@
 					$("#4 a").mouseover(function(){
 						$("#4 a").animate({fontSize:"18px"},200);
 						$("#4").css({
-							"background-image": "url('kegel.png')",
+							"background-image": "url('img/kegel.png')",
 							"background-position": "left",
 							"background-repeat": "no-repeat",
 							"background-size": "8%"});
@@ -161,7 +103,7 @@
 					$("#5 a").mouseover(function(){
 						$("#5 a").animate({fontSize:"18px"},200);
 						$("#5").css({
-							"background-image": "url('kegel.png')",
+							"background-image": "url('img/kegel.png')",
 							"background-position": "left",
 							"background-repeat": "no-repeat",
 							"background-size": "8%"});
@@ -169,7 +111,7 @@
 					$("#6 a").mouseover(function(){
 						$("#6 a").animate({fontSize:"18px"},200);
 						$("#6").css({
-							"background-image": "url('kegel.png')",
+							"background-image": "url('img/kegel.png')",
 							"background-position": "left",
 							"background-repeat": "no-repeat",
 							"background-size": "8%"});
@@ -212,15 +154,88 @@
 			</aside>
 			<article>
 				<div class="slider">		
-					<div id="foto1">
-						<img  src="img/foto10.jpg">
+					<div class="slideshow">
+						<div class="mySlides1 fade">
+							<div class="nummertext">1/3</div>
+							<img src="img/foto1.jpg" >
+							<div class="fototext">Text</div>
+						</div>
+						<div class="mySlides1 fade"> 
+							<div class="nummertext">2/3</div>
+							<img src="img/foto2.jpg">
+							<div class="fototext">Text</div>
+						</div>
+						<div class="mySlides1 fade">
+							<div class="nummertext">3/3</div>
+							<img src="img/foto3.jpg">
+							<div class="fototext">Text</div>
+						</div>
+						<a class="prev" onclick="plusSlides1(-1)">&#10094</a>
+						<a class="next" onclick="plusSlides1(1)">&#10095</a>
 					</div>
-					<div id="foto2">
-						<img src="img/foto2.jpg">
-					</div>
-					<div id="foto3">
-						<img src="img/foto3.jpg">
-					</div>	
+					<br>
+				 	<div style="text-align: center;">
+				 		<span class="dot1" onclick="currentSlide1(1)"></span>
+				 		<span class="dot1" onclick="currentSlide1(2)"></span>
+				 		<span class="dot1" onclick="currentSlide1(3)"></span>
+				 	</div>
+				 	<script type="text/javascript">
+				 		var slideIndex1 = 1;
+				 		showSlides1(slideIndex1);
+
+				 		$(document).ready(function(){ 			
+						 	setInterval('plusSlides1(1)', 5000);		
+				 		});
+
+				 		function plusSlides1(n) {
+				 			showSlides1(slideIndex1 += n);
+				 		}
+
+				 		function currentSlide1(n) {
+				 			showSlides1(slideIndex1 = n);
+				 		}
+
+				 		function showSlides1(n) {
+				 			var i;
+				 			var slides = $(".mySlides1");
+				 			var dots = $(".dot1");
+				 		
+					 		if (n > slides.length) {
+					 			slideIndex1 = 1
+					 		}
+					 		if (n < 1) {
+					 			slideIndex1 = slides.length
+					 		}
+					 		for (i = 0; i < slides.length; i++) {
+					 			slides[i].style.display = "none";
+					 		}
+					 		for (i = 0; i < slides.length; i++) {
+					 			dots[i].className = dots[i].className.replace("active","");
+					 		}
+					 		slides[slideIndex1 - 1].style.display = "block";
+					 		dots[slideIndex1 -1].style.display = "active";
+							}
+				 	</script>
+				</div>
+				<div class="scrolla">
+					<span class="scrollalist">
+						<a href="#restaurang">Restaurang</a>
+					</span>
+					<span class="scrollalist">
+						<a href="#bowlingbanor">Bowlingbanor</a>
+					</span>
+					<span class="scrollalist">
+						<a href="#discobowling">Discobowling</a>
+					</span>
+					<span class="scrollalist">
+						<a href="#skoroklot">Skor/Klot</a>
+					</span>
+					<span class="scrollalist">
+						<a href="#klasrum">Klasrum</a>
+					</span>
+					<span class="scrollalist">
+						<a href="#uteplats">Uteplats</a>
+					</span>
 				</div>
 				<div class="text" id="välkomna">
 					<h2>Välkommen att spela Bowling i Karlskrona.</h2>
@@ -252,34 +267,6 @@
 					</p>
 				</div>								
 			</article>
-			<div class="divrighr">
-				<ul id="rightlist">
-					<li>
-						<a href="#upp">Upp</a>
-					</li>
-					<li>
-						<a href="#restaurang">Restaurang</a>
-					</li>
-					<li>
-						<a href="#bowlingbanor">Bowlingbanor</a>
-					</li>
-					<li>
-						<a href="#discobowling">Discobowling</a>
-					</li>
-					<li>
-						<a href="#utrustning">Skor/Klot</a>
-					</li>					
-					<li>
-						<a href="#klasrum">Klasrum</a>
-					</li>
-					<li>
-						<a href="#uteplats">Uteplats</a>
-					</li>
-					<li>
-						<a href="#annat">Övrigt</a>
-					</li>
-				</ul>
-			</div>
 		</div>
 		</div>
 		<div class="main2">
@@ -315,21 +302,79 @@
 			</div>
 			<div id="main2slider">
 				<div class="slider">		
-					<div id="foto6">
-						<img  src="img/foto6.jpg">
+					<div class="slideshow">
+						<div class="mySlides2 fade">
+							<div class="nummertext">1/5</div>
+							<img src="img/foto6.jpg">
+							<div class="fototext">Text</div>
+						</div>
+						<div class="mySlides2 fade"> 
+							<div class="nummertext">2/5</div>
+							<img src="img/foto7.jpg">
+							<div class="fototext">Text</div>
+						</div>
+						<div class="mySlides2 fade">
+							<div class="nummertext">3/5</div>
+							<img src="img/foto8.jpg">
+							<div class="fototext">Text</div>
+						</div>
+						<div class="mySlides2 fade">
+							<div class="nummertext">4/5</div>
+							<img src="img/foto9.jpg">
+							<div class="fototext">Text</div>
+						</div>
+						<div class="mySlides2 fade">
+							<div class="nummertext">5/5</div>
+							<img src="img/foto10.jpg">
+							<div class="fototext">Text</div>
+						</div>
+						<a class="prev" onclick="plusSlides2(-1)">&#10094</a>
+						<a class="next" onclick="plusSlides2(1)">&#10095</a>
 					</div>
-					<div id="foto7">
-						<img src="img/foto7.jpg">
-					</div>
-					<div id="foto8">
-						<img src="img/foto8.jpg">
-					</div>
-					<div id="foto9">
-						<img src="img/foto9.jpg">
-					</div>
-					<div id="foto10">
-						<img src="img/foto10.jpg">
-					</div>
+					<br>
+				 	<div style="text-align: center;">
+				 		<span class="dot2" onclick="currentSlide2(1)"></span>
+				 		<span class="dot2" onclick="currentSlide2(2)"></span>
+				 		<span class="dot2" onclick="currentSlide2(3)"></span>
+				 		<span class="dot2" onclick="currentSlide2(4)"></span>
+				 		<span class="dot2" onclick="currentSlide2(5)"></span>
+				 	</div>
+				 	<script type="text/javascript">
+				 		var slideIndex2 = 1;
+				 		showSlides2(slideIndex2);
+
+				 		$(document).ready(function(){ 			
+						 	setInterval('plusSlides2(1)', 2000);		
+				 		});
+				 		function plusSlides2(n) {
+				 			showSlides2(slideIndex2 += n);
+				 		}
+
+				 		function currentSlide2(n) {
+				 			showSlides2(slideIndex2 = n);
+				 		}
+
+				 		function showSlides2(n) {
+				 			var i;
+				 			var slides = $(".mySlides2");
+				 			var dots = $(".dot2");
+				 		
+					 		if (n > slides.length) {
+					 			slideIndex2 = 1
+					 		}
+					 		if (n < 1) {
+					 			slideIndex2 = slides.length
+					 		}
+					 		for (i = 0; i < slides.length; i++) {
+					 			slides[i].style.display = "none";
+					 		}
+					 		for (i = 0; i < slides.length; i++) {
+					 			dots[i].className = dots[i].className.replace("active","");
+					 		}
+					 		slides[slideIndex2 - 1].style.display = "block";
+					 		dots[slideIndex2 -1].style.display = "active";
+							}
+				 	</script>
 				</div>
 			</div>
 		</div> 
@@ -382,23 +427,6 @@
 					<span>
 						<p>som kvällstid.</p>					
 						<img src="img/foto12.jpg">
-					</span>
-				</div>
-				<a name="annat"></a>
-				<div class="text">
-					<h2>Översiktskarta</h2>
-				</div>
-				<div class="text" id="overkartan">
-					<span>
-					<br>
-						<p>						
-							Cyberzone är på ca 2500kvm.<br>
-							Bowlinghallen tar ca 800kvm.
-						</p>
-					</span>
-					<span>
-						<br>
-						<img src="img/overkarta.jpg">
 					</span>
 				</div>
 			</div>
